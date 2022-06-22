@@ -5,15 +5,15 @@ const db = require('../db/conn')
 const Task = db.define('Task', {
     title: {
         type: DataTypes.STRING,
-        required: true
+        required: true,
     },
     description: {
         type: DataTypes.STRING,
-        required: true
+        required: true,
     },
     done: {
         type: DataTypes.BOOLEAN,
-        required: true
+        required: true,
     }
 })
 
