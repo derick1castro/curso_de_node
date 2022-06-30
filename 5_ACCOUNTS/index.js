@@ -49,7 +49,7 @@ function buildAccount() {
         .prompt([
             {
                 name: 'accountName',
-                message: 'Digite um nome para a sua conta',
+                message: 'Digite um nome para a sua conta: ',
             },
         ])
         .then((answer) => {
@@ -103,7 +103,7 @@ function deposit() {
         inquirer.prompt([
             {
                 name: 'amount',
-                message: 'Quanto você deseja depositar',
+                message: 'Quanto você deseja depositar? ',
             },
         ]).then((answer) => {
 
