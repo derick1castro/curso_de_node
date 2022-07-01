@@ -35,4 +35,4 @@ app.get("/product/:id", (req, res) => {
     res.render("home",{ products })
 })
 
-app.listen(3000)
+app.listen(3001)
