@@ -40,13 +40,13 @@ module.exports = class ToughController {
   //   res.redirect('/')
   // }
 
-  // static async editProduct(req, res) {
-  //   const id = req.params.id
+  static async editProduct(req, res) {
+    const id = req.params.id
 
-  //   const product = await Product.getProductById(id)
+    const product = await Product.findById(id).lean()
 
-  //   res.render('products/edit', { product })
-  // }
+    res.render('products/edit', { product })
+   }
 
   // static async editProductPost(req, res) {
   //   const id = req.body.id
